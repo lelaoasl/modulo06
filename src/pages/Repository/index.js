@@ -6,8 +6,6 @@ import { Browser } from './styles';
 export default function Repository({ navigation }) {
   const repository = navigation.getParam('repository');
 
-  console.tron.log(repository.html_url);
-
   return <Browser source={{ uri: repository.html_url }} />;
 }
 
